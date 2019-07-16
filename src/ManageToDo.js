@@ -6,7 +6,15 @@ const ManageToDo = (props) => {
     if (todoList.length > 0){
         renderHtml = todoList.map(todo => {
             return(
-                <li key={todo.id} className="list-group-item" onClick={() => {deleteTodo(todo.id)}}>{todo.content}</li>
+                <li key={todo.id} className="list-group-item" onClick={() => {deleteTodo(todo.id)}}>
+                    {
+                        todo.is_deleted ? (
+                            <del>{todo.content}</del>
+                        ) : (
+                                <a>{ todo.content }</a>
+                        )
+                    }
+                </li>
             )
         });
     }else{

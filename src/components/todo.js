@@ -5,15 +5,21 @@ import AddTodo from '../addTodo';
 class Todo extends Component {
     state = {
         todoList: [
-            { id: 100, content: "credit card payment" },
-            { id: 111, content: "grossery" }
+            { id: 100, content: "credit card payment", is_deleted: false },
+            { id: 111, content: "grossery", is_deleted: false }
         ]
     }
 
     deleteTodo = (id) => {
-        let todolist = this.state.todoList.filter(todo => {
-            return todo.id !== id;
-        })
+        // let todolist = this.state.todoList.filter(todo => {
+        //     return todo.id !== id;
+        // })
+        let todolist = this.state.todoList.map(todo => {
+            if (id === todo.id) {
+                todo['is_deleted'] = todo['is_deleted'] ? false : true
+                return todo
+            } else { return todo }
+        });
         this.setState({
             todoList: todolist
         })
