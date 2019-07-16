@@ -19,7 +19,8 @@ const Ninja = (props) => {
 			<tr key="10">
 				<th>Name</th>	
 				<th>Email</th>	
-				<th>Age</th>	
+				<th>Age</th>
+				<th>Action</th>
 			</tr>	
 			{returnObject}
 		</table>

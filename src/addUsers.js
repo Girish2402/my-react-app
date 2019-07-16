@@ -22,14 +22,14 @@ class AddUser extends Component{
 	
 	render(){
 		return(
-			<form onSubmit={this.handleOnSubmit}>
-				Name:<br/>
+			<form onSubmit={this.handleOnSubmit} id="submit-form">
+				<label>Name:</label><br/>
 					<input type="text" name="name" id="name" onChange={this.handleOnChange}/>
 				<br/><br/>
-				Email:<br/>
+				<label>Email:</label><br/>
 				<input type="text" name="email" id="email" onChange={this.handleOnChange}/>
 				<br/><br/>
-				Age:<br/>
+				<label>Age:</label><br/>
 				<input type="text" name="age" id="age" onChange={this.handleOnChange}/>
 				<br/><br/>
 				<input type="submit" value="Submit"/>

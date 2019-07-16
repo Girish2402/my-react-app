@@ -27,3 +27,23 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+#submit-form{
+  text-align: center;
+}
+
+#submit-form label{
+  text-align: left;
+}
+
+.todo-list h1{
+  color: #0ec359;
+}
+
+.todo-list form{
+  margin-top: 50px;
+}
+
+.todo-list label{
+  margin-right: 20px;
+}
