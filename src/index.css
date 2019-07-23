@@ -47,3 +47,23 @@ tr:nth-child(even) {
 .todo-list label{
   margin-right: 20px;
 }
+
+.main-container{
+  padding-top: 50px;
+}
+
+.home{
+  padding-top: 50px;
+}
+
+.home .card img{
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  opacity: 0.6;
+  width: 150px;
+}
+
+.home .card{
+  overflow: hidden;
+}
